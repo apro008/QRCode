@@ -28,6 +28,7 @@ const Qrcode = () => {
 				style={styles.textinput}
 				value={textValue}
 				onChangeText={setTextValue}
+				onEndEditing={() => setTextValue("")}
 				numberOfLines={1}
 				maxLength={20}
 				placeholder="Type Something to Create QR"
@@ -78,6 +79,6 @@ const styles = StyleSheet.create({
 		borderRadius: 5,
 		padding: 5,
 		paddingHorizontal: 10,
-		marginTop: 30,
+		marginTop: 40,
 	},
 });

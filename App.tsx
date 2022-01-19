@@ -1,10 +1,16 @@
 import "react-native-gesture-handler";
 import { StyleSheet, Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 import Screen from "./src/navigation";
 
 export default function App() {
-	return <Screen />;
+	return (
+		<>
+			<StatusBar style="auto" />
+			<Screen />
+		</>
+	);
 }
 
 const styles = StyleSheet.create({
