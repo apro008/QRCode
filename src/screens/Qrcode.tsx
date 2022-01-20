@@ -39,9 +39,8 @@ const Qrcode = () => {
 				</TouchableOpacity>
 			) : null}
 			<View style={styles.qr}>
-				{textValue?.length < 1 ? (
-					<Text style={[styles.text, { marginBottom: 10 }]}>Demo QR</Text>
-				) : null}
+				<Text style={[styles.text, { marginBottom: 10 }]}>QR Code</Text>
+
 				<QRCode value={qrValue || hello} />
 			</View>
 		</View>
